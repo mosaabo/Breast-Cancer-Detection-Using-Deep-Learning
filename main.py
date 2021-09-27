@@ -17,7 +17,8 @@ from keras.utils.vis_utils import plot_model
 import cv2
 import os
 from sklearn.model_selection import train_test_split
-K.set_image_dim_ordering('tf')
+K.set_image_data_format('channels_first')
+#K.set_image_dim_ordering('tf')
 
 # load data
 numepochs=500
